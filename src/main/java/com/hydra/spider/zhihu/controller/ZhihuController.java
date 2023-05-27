@@ -31,7 +31,7 @@ public class ZhihuController {
             Spider.create(wenxinProcessor)
                     .addRequest(request)
                     .addPipeline(new WenxinPipeline(zhihuRepository))
-                    .setDownloader(new SeleniumDownloader("D:\\Program Files\\Google\\Chrome\\Application\\chromedriver.exe")
+                    .setDownloader(new SeleniumDownloader("C:\\Users\\leiwan4\\Downloads\\chromedriver_win32\\chromedriver.exe")
                             .setSleepTime(1000))
                     .run();
         }).start();
@@ -50,7 +50,7 @@ public class ZhihuController {
 //                            "https://www.zhihu.com/question/589904230"
                     )
                     .addPipeline(new WenxinPipeline(zhihuRepository))
-                    .setDownloader(new SeleniumDownloader("D:\\Program Files\\Google\\Chrome\\Application\\chromedriver.exe")
+                    .setDownloader(new SeleniumDownloader("C:\\Users\\leiwan4\\Downloads\\chromedriver_win32\\chromedriver.exe")
                             .setSleepTime(1000))
                     .run();
         }).start();

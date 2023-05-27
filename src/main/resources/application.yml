@@ -3,7 +3,7 @@ elasticsearch:
   connect_timeout_millis: 10000
 
 server:
-  port: 8888
+  port: 8988
 
 logging:
   level:

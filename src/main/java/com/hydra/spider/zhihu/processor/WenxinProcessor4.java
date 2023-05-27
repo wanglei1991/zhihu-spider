@@ -40,7 +40,7 @@ public class WenxinProcessor4 implements PageProcessor {
         Spider.create(new WenxinProcessor4())
                 .addUrl("https://www.zhihu.com/question/589929380")
                 .thread(2)
-                .setDownloader(new SeleniumDownloader("F:\\gitProject\\chrome\\chromedriver_win32\\chromedriver.exe")
+                .setDownloader(new SeleniumDownloader("C:\\Users\\leiwan4\\Downloads\\chromedriver_win32\\chromedriver.exe")
                         .setSleepTime(1000))
                 .run();
     }

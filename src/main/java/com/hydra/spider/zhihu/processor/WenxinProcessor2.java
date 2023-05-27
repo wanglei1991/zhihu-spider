@@ -18,10 +18,7 @@ public class WenxinProcessor2 implements PageProcessor {
 
     @Override
     public void process(Page page) {
-        String contentPath= "div[@class='QuestionAnswers-answers']"+
-                "//div[@class='RichContent RichContent--unescapable']" +
-                "//div[@class='RichContent-inner']"+
-                "/tidyText()";
+        String contentPath= "//div[@class='RichContent-inner']/tidyText()";
         List<String> answerList = page.getHtml().xpath(contentPath).all();
         for (int i = 0; i < answerList.size(); i++) {
             System.out.println("第"+(i+1)+"条回答:");

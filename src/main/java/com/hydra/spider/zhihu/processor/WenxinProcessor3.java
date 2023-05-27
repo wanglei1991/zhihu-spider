@@ -43,7 +43,7 @@ public class WenxinProcessor3 implements PageProcessor {
                 .addUrl("https://www.zhihu.com/question/589929380")
                 .thread(2)
 //                .setDownloader(new SeleniumDownloader("F:\\tools\\chromedriver.exe")
-                .setDownloader(new SeleniumDownloader("D:\\Program Files\\Google\\Chrome\\Application\\chromedriver.exe")
+                .setDownloader(new SeleniumDownloader("C:\\Users\\leiwan4\\Downloads\\chromedriver_win32\\chromedriver.exe")
                         .setSleepTime(1000))
                 .run();
     }
